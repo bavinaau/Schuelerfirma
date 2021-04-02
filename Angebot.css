@@ -78,7 +78,7 @@ a.support:hover{
     float: right;
     background: white ;
     float: right; 
-    overflow: hidden; /* new comment */
+    overflow: hidden; 
 }
 .comment{
     align-self: left; 
