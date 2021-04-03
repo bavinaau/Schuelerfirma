@@ -1,3 +1,3 @@
 # Schuelerfirma-
 Ein repository für unsere Website 
-Dies ist unser Repository für die Webseite, ich werde es vielleicht nicht permanent im Auge behalten, aber hoffetlich schaue ich vor allem in den Ferien alle paar Tage mal nach, bitte bei Pull Requests mich als Reviewer angeben, der Backend Code kommt noch und optional auch das Docker image, viel Spaß! 
+Dieses Repository dient der Entwicklung einer Website für eine Schülerfirma, aufgrund dessen, dass dies grundsätzlich ein privates repository ist, wird um Verständniss gebeten, das Commits eher sporadisch reviewed werden.
