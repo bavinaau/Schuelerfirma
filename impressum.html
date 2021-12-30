@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        {%load static%} 
+        <meta charset="utf-8">
+        <meta name="viewpoer" content ="width=device-width, initial-scale=1.0">
+        <link rel="sytlesheet"  href="{% static 'home/datenschutz.css' %}">  
+        <title>
+            Datenschutzerklärung 
+        </title>
+        <style>
+            .navigationbar{
+                background: rgb(179, 173, 173); 
+                overflow: hidden; 
+                position: fixed;
+                margin-top: 0px; 
+                margin-left: 10px; 
+                margin-right: 10px;
+                top: 0;
+                left: 10px; 
+                right: 10px;
+                width: 98%;
+                text-align: center; 
+            }
+            
+            .navlink{
+                color: black; 
+                text-decoration: none;
+                display: block; 
+                padding-top: 1px;
+                padding-bottom: 3px; 
+                padding-left: 8px; 
+                padding-right: 8px;
+                float: left;  
+            }
+            a.navlink:hover{
+                color: blue; 
+                background-color: grey;
+            }
+            .supportsupport{
+                text-align:right; 
+            }
+            .support{
+                position: relative; 
+                text-align: right; 
+                color: black;
+                text-decoration: none;
+                padding-top:1px;
+                padding-bottom: 1px;
+                padding-left: 8px;
+                padding-right: 8px;
+                align-self: right; 
+                align-items: right; 
+                margin-right: 0px; 
+                right: 0px; 
+            }
+            a.support:hover{
+                color: blue;
+                background-color: grey; 
+            
+            }
+            .main{
+                margin-top: 30px; 
+                background-color: rgb(255, 255, 255);
+                justify-content: center;
+                text-align: justify; 
+            }
+            .left img{
+                float: left; 
+                width: 100px;
+                height: 200px; 
+            }
+            .right img{
+                float: right;
+                width: 10%;
+                height: 60px; 
+                border-style: solid;
+                border: 1px; 
+            }
+            .right p{
+                float: right; 
+            
+            }
+            .bottomnav{
+                position: absolute;
+                margin-top: 60px; 
+                margin-right: 0px; 
+                right:0px;
+                float: right;
+                background: white ;
+                float: right; 
+                overflow: hidden; 
+            }
+            .comment{
+                align-self: left; 
+                text-align: left;
+                text-decoration: overline ;
+            }
+            img{ 
+                float: left;
+            }
+            .bootomnavpicutre{
+                position: absolute;
+                padding-top: 30px;
+                left: 0;
+            }
+            .text{
+                float: left;
+                font-size: 12pt; 
+            }
+            table{
+                border: 1px solid black;
+                border-collapse: collapse; 
+                justify-content: center;
+                justify-self: center; 
+            }
+            th,tr,td{
+                padding-left: 10px; 
+                padding-right: 10px; 
+                border: 1px solid black;
+                border-collapse: collapse; 
+            }
+            .button{
+                border: 2px solid black; 
+                border-radius: 10%;  
+                position: relative;
+                margin-left: 50%; 
+                text-decoration: none; 
+                color: black;  
+                background:rgb(179, 173, 173);          
+            }
+        </style>
+        <nav class="navigationbar">  
+            <a href="{% url 'home:Schuelerfirma' %}" class="navlink"> Home </a>
+            <!--<a href="{% url 'home:TutorInnen'%}" class="navlink"> Unsere Tutoren </a>-->
+            <a href="{% url 'home:Angebot'%}" class="navlink"> Unser Angebot </a> 
+            <a href="{% url 'home:Kontakt'%}"class="navlink"> Kontakt </a> 
+            <div class="supportsupport">
+            <a href="{% url 'home:Support'%}" class="support"> Support </a>
+            <!--<a href="{% url 'home:Login'%}" class="support">Login</a>-->
+            </div>
+        </nav>
+    </head>
+    <body>
+        <h1>Impressum</h1>
+
+<h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+<p>Sch&uuml;lerfirma Projekt1.0 S-GmbH<br />
+Friedrich-Ebert-Stra&szlig;e 52<br />
+15234 Frankfurt (Oder)</p>
+
+<p><strong>Vertreten durch:</strong><br />
+Dr. Rita Lange</p>
+
+<h2>Kontakt</h2>
+<p>Telefon: 0335401680<br />
+E-Mail: sekretariat@gauss-gymnasium.de</p>
+
+<h2>EU-Streitschlichtung</h2>
+<p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+
+<h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
+<p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+<p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
+    </body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_Gau%C3%9F-Gymnasium_Frankfurt_%28Oder%29.jpg" alt="Gauss-Logo" width=10% height=50px>
+<div class="bottomnav">
+    <a href="{% url 'home:Impressum'%}" class="navlink"> Impressum </a>
+    <a href="{% url 'home:Datenschutz'%}" class="navlink">Datenschutz </a> 
+    <a href="{% url 'home:Support'%}" class="navlink"> Hilfe</a>
+</div>
+</html>

@@ -2,61 +2,65 @@
 
 <html>
 <head>
+    {%load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="schuelerfirma.css"> 
+    <link rel="stylesheet" href="{% static  'home/schuelerfirma.css' %}"> 
     <title>
         Unsere Schülerfirma 
     </title>
 <nav class="navigationbar">  
-    <a href="schuelerfirma.html" class="navlink"> Home </a>
-    <a href="Tutoren.html" class="navlink"> Unsere Tutoren </a>
-    <a href="Angebot.html" class="navlink"> Unser Angebot </a> 
-    <a href="Kontakt.html"class="navlink"> Kontakt </a> 
+    <a href="{% url 'home:Schuelerfirma' %}" class="navlink"> Home </a>
+    <!--<a href="{% url 'home:TutorInnen'%}" class="navlink"> Unsere Tutoren </a>-->
+    <a href="{% url 'home:Angebot'%}" class="navlink"> Unser Angebot </a> 
+    <a href="{% url 'home:Kontakt'%}"class="navlink"> Kontakt </a> 
     <div class="supportsupport">
-    <a href="Support.html" class="support"> Support </a>
-    <a href="Login.html" class="support">Login</a>
+    <a href="{% url 'home:Support'%}" class="support"> Support </a>
+    <!--<a href="{% url 'home:Login'%}" class="support">Login</a>-->
     </div>
 </nav>
-</head>
+<!--<script>
+    function run(){
+        window.alert("Diese FUnktion gibt es nicht..."); 
+    }
+</script>
+</head> -->
 
 <body class="main"> 
 <h1>
-    Unsere Schülerfirma (Platzhalter für Namen)
+    Unsere Schülerfirma Projekt 1.0
 </h1>
 <p>
     Liebe Mitschülerinnen und Mitschüler, <br>
-    manchmal geht es uns allen so, man sitzt im Unterrich und ist einfach etwas unaufmerksam, sei es nun der/die Nachbar/in 
+    manchmal geht es uns allen so, man sitzt im Unterrich und ist einfach etwas unaufmerksam, sei es nun der Nachbar, die Nachbarin 
     oder auch einfach nur ein schlechter Tag. Auch das Mitschreiben mag manchmal lästig sein. 
     Leider verpasst man dann ab und zu auch wichtige Inhalte, was natürlich nicht sehr schlimm ist, solange man diese
-    auch nacharbeitet. Ferner noch, sind manche Themen auch einfach schwierig zu verstehen und die Lehrer/innen haben teilweise
-    auch Schwierigkeiten sich in die Schüler/innen hineinzuversetzen, da kann es manchmal durchaus praktisch sein, 
-    wenn man das Thema nochmals von einer Mitschüler/in erklärt bekommt, welche/r das Fach
-    bei dem Lehrer/in schon einmal durchlaufen hat.
-    Daher wollen wir euch hier unser Schülerfirma [NAME] vorstellen, welche genau diese Probleme für euch löst. 
+    auch nacharbeitet. Ferner noch, sind manche Themen auch einfach schwierig zu verstehen und die Lehrerinnen und Leherer haben teilweise
+    auch Schwierigkeiten sich in die Schülerinnen und Schüler hineinzuversetzen, da kann es manchmal durchaus praktisch sein, 
+    wenn man das Thema nochmals von einer Mitschülerin oder einem Mitschüler erklärt bekommt, welche,beziehungsweise welche, das Fach
+    bei der Lehrein, beziehungsweise dem Lehrer, schon einmal durchlaufen hat.
+    Daher wollen wir euch hier unser Schülerfirma Projekt 1.0 vorstellen, welche genau diese Probleme für euch löst. 
 </p>
 <p>
-    Unsere Tutoren aus den Klassenstufen 11 und 12 können euch dabei Themen aus einer Perspektive eines/r Schülerinn/s erklären,
+    Unsere Tutorinnen und Tutoren aus der Klassenstufe 12 können euch dabei Themen aus einer Perspektive einer Schülerinn, beziehungsweise eines Schülers, erklären,
     was manchmal leichter zu verstehen ist, als die Perspektive studierter Lehrkräfte. Dabei können wir auch auf 
-    besondere Anforderungen unserer Lehrkräfte eingehen und euch Ratschläge zu Leistungskontrolle geben. Erfahrt hier gerne mehr über
-    unere Tutoren: <a href="Tutoren.html" class="intext"> Unsere Tutoren </a>
+    besondere Anforderungen unserer Lehrkräfte eingehen und euch Ratschläge zu Leistungskontrollen geben. 
 </p>
 <p>
-    Eine Nachhilfe Unterrichtsstude könnte ihr gerne mit uns zu oder direkt nach den regulären Unterrichtszeiten vereinbaren,
-    eine Unterrichtsstunden wären dann entsprechend zeitlich mit einer Unterrichtsstunde, also 45 Minuten zu vergleichen, 
+    Eine Nachhilfe Unterrichtsstude könnt ihr gerne mit uns zu oder direkt nach den regulären Unterrichtszeiten vereinbaren,
+    eine Unterrichtsstunde wäre dann entsprechend zeitlich mit einer Unterrichtsstunde, also 45 Minuten zu vergleichen, 
     gegebenenfalls können aber auch Doppelstunden vereinabrt werden, für weitere Infromationen könnt ihr hier nochmals nachlesen:
-    <a href="Angebot.html"> Unser Angebot </a>
+    <a href="{% url 'home:Angebot'%}"> Unser Angebot </a>
 </p>
 <p>
     Falls ihr jetzt schon einmal eine Unterrichtsstunde vereinbaren wollt, oder auch noch fragen habt, dann stellt diese bitte an
-    schuelerfirma@gauss-gymnasium.de oder benutzt unser Kontaktformular (zur Zeit nicht verfügbar) unter <a href="Kontakt">Kontakt</a>
+    <a href="mailto:projekt1.0@gauss-gymnasium.de"> projekt1.0@gauss-gymnasium.de</a>, wir freuen uns, von euch zu hören! 
 </p>
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_Gau%C3%9F-Gymnasium_Frankfurt_%28Oder%29.jpg" alt="Gauss-Logo" width=10% height=50px>
 <div class="bottomnav">
-    <a href="ueberuns.html" class="navlink">Über uns</a>
-    <a href="Impressum.html" class="navlink"> Impressum </a>
-    <a href="Impressum.html" class="navlink">Datenschutz </a> 
-    <a href="Support.html" class="navlink"> Hilfe</a>
+    <a href="{% url 'home:Impressum'%}" class="navlink"> Impressum </a>
+    <a href="{% url 'home:Datenschutz'%}" class="navlink">Datenschutz </a> 
+    <a href="{% url 'home:Support'%}" class="navlink"> Hilfe</a>
 </div>
 </body>
 </html>
