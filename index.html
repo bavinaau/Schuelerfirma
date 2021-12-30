@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {%load static%} 
+        <link rel="stylesheet" type="text/css" href="{%static 'home/test.css'%}"> 
+        <title>
+            This is a test page
+        </title>
+    </head>
+    <body>
+        <h1>
+            Th is a test page 
+        </h1>
+        <div class="test">
+            <p>
+                This is just some random text 
+            </p>
+        </div>
+        <a href="{% url 'home:Kontakt'%}"> Something </a>
+        <a href="/home/Impressum">Impressum </a> 
+        <form> Some stuuff 
+        <input type="submit"> 
+        </form>
+    </body>
+</html>

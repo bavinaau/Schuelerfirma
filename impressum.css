@@ -1,0 +1,114 @@
+.navigationbar{
+    background: rgb(179, 173, 173); 
+    overflow: hidden; 
+    position: fixed;
+    margin-top: 0px; 
+    margin-left: 10px; 
+    margin-right: 10px;
+    top: 0;
+    left: 10px; 
+    right: 10px;
+    width: 98%;
+    text-align: center; 
+}
+
+.navlink{
+    color: black; 
+    text-decoration: none;
+    display: block; 
+    padding-top: 1px;
+    padding-bottom: 3px; 
+    padding-left: 8px; 
+    padding-right: 8px;
+    float: left;  
+}
+a.navlink:hover{
+    color: blue; 
+    background-color: grey;
+}
+.supportsupport{
+    text-align:right; 
+}
+.support{
+    position: relative; 
+    text-align: right; 
+    color: black;
+    text-decoration: none;
+    padding-top:1px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    align-self: right; 
+    align-items: right; 
+    margin-right: 0px; 
+    right: 0px; 
+}
+a.support:hover{
+    color: blue;
+    background-color: grey; 
+
+}
+.main{
+    margin-top: 30px; 
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: justify; 
+}
+.left img{
+    float: left; 
+    width: 100px;
+    height: 200px; 
+}
+.right img{
+    float: right;
+    width: 10%;
+    height: 60px; 
+    border-style: solid;
+    border: 1px; 
+}
+.right p{
+    float: right; 
+
+}
+.bottomnav{
+    position: absolute;
+    margin-top: 60px; 
+    margin-right: 0px; 
+    right:0px;
+    float: right;
+    background: white ;
+    float: right; 
+    overflow: hidden; 
+}
+.comment{
+    align-self: left; 
+    text-align: left;
+    text-decoration: overline ;
+}
+img{ 
+    float: left;
+}
+.bootomnavpicutre{
+    position: absolute;
+    padding-top: 30px;
+    left: 0;
+}
+.text{
+    float: left;
+    font-size: 12pt; 
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse; 
+    justify-content: center;
+    justify-self: center; 
+}
+th,tr,td{
+    padding-left: 10px; 
+    padding-right: 10px; 
+    border: 1px solid black;
+    border-collapse: collapse; 
+}
+h1{
+    font-size: 100; 
+}

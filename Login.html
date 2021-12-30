@@ -2,9 +2,10 @@
 
 <html>
     <head>
+        {% load static %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Login.css">
+        <link rel="stylesheet" href="{% static 'home/Login.css'%}">
         <title>
             Login
         </title>
@@ -15,13 +16,13 @@
             }
         </script>
         <nav class="navigationbar">
-            <a href="schuelerfirma.html" class="navlink"> Home </a>
-            <a href="Tutoren.html" class="navlink"> Unsere Tutoren </a>
-            <a href="Angebot.html" class="navlink"> Unser Angebot </a> 
-            <a href="Kontakt.html"class="navlink"> Kontakt </a> 
+            <a href="{% url 'home:Schuelerfirma' %}" class="navlink"> Home </a>
+            <a href="{% url 'home:TutorInnen'%}" class="navlink"> Unsere Tutoren </a>
+            <a href="{% url 'home:Angebot'%}" class="navlink"> Unser Angebot </a> 
+            <a href="{% url 'home:Kontakt'%}"class="navlink"> Kontakt </a> 
             <div class="supportsupport">
-            <a href="Support.html" class="support"> Support </a>
-            <a href="Login.html" class="support">Login</a>
+            <a href="{% url 'home:Support'%}" class="support"> Support </a>
+            <a href="{% url 'home:Login'%}" class="support">Login</a>
             </div>
         </nav>
     </head>
@@ -34,17 +35,18 @@
                 <label for="Login"> Bitte geben Sie ihren Login-Token ein:</label> <br>
                 <input form="text" id="Login" name="Login"> <br>
             </form>
-            <button onclick=run()> Login </button><br>
-            <a href="LogedIn.html" class="LoginTemp"> Login temp </a> <br> 
+            <!--<button onclick=run()> Login </button><br>-->
+            <a href="{{output}}" > Login </a> <br> 
             <a href=Support.html>Support </a> 
         </div> <br>
-        
+        <h1>
+            {{output}} 
+        </h1>
         <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_Gau%C3%9F-Gymnasium_Frankfurt_%28Oder%29.jpg" alt="Gauss-Logo"  class="bootomnavpicutre">
         <div class="bottomnav">
-            <a href="https://google.com" class="navlink">Über uns</a>
-            <a href="https://www.google.com" class="navlink"> Impressum </a>
-            <a href="https://wwww.google.com" class="navlink">Datenschutz </a> 
-            <a href="https://www.google.com" class="navlink"> Hilfe</a>
+            <a href="{% url 'home:Impressum'%}" class="navlink"> Impressum </a>
+            <a href="{% url 'home:Datenschutz'%}" class="navlink">Datenschutz </a> 
+            <a href="{% url 'home:Support'%}" class="navlink"> Hilfe</a>
         </div>
     </body>
 

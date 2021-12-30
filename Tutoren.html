@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {%load static%}
         <meta charset="utf-8">
         <meta name="vieport" cotent="widhh=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="Tutoren.css">
+        <link rel="stylesheet" href="{% static 'home/Tutoren.css'%}">
         <title>
             Unsere Tutoren
         </title>
         <nav class="navigationbar">  
-            <a href="schuelerfirma.html" class="navlink"> Home </a>
-            <a href="Tutoren.html" class="navlink"> Unsere Tutoren </a>
-            <a href="Angebot.html" class="navlink"> Unser Angebot </a> 
-            <a href="Kontakt.html"class="navlink"> Kontakt </a> 
+            <a href="{% url 'home:Schuelerfirma' %}" class="navlink"> Home </a>
+            <a href="{% url 'home:TutorInnen'%}" class="navlink"> Unsere Tutoren </a>
+            <a href="{% url 'home:Angebot'%}" class="navlink"> Unser Angebot </a> 
+            <a href="{% url 'home:Kontakt'%}"class="navlink"> Kontakt </a> 
             <div class="supportsupport">
-            <a href="Support.html" class="support"> Support </a>
-            <a href="Login.html" class="support">Login</a>
+            <a href="{% url 'home:Support'%}" class="support"> Support </a>
+            <a href="{% url 'home:Login'%}" class="support">Login</a>
             </div>
         </nav>
     </head>
@@ -23,24 +24,22 @@
             Unsere Tutoren 
         </h1>
         <div class="left">
-            <img scr=".../test.png" alt="Bild Pusch J.">
             <p>
-                Eigene Beschreibugn des Tutors (Platzhalter) 
+                 {{Tutor1Name}} <br>
+                 {{Tutor1Zeit}} <br>
+                 {{Tutor1Darstellung}} 
             </p>
-
         </div>
         <div class="right">
-            <img scr=".../bavina.png" alt="Bild Bavin A.">
             <p>
-                Eigene Beschreibugn des Tutors (Platzhalter) 
+                {{Tutor2}}
             </p>
         </div>
         <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_Gau%C3%9F-Gymnasium_Frankfurt_%28Oder%29.jpg" alt="Gauss-Logo"  class="bootomnavpicutre">
 <div class="bottomnav">
-    <a href="https://google.com" class="navlink">Über uns</a>
-    <a href="https://www.google.com" class="navlink"> Impressum </a>
-    <a href="https://wwww.google.com" class="navlink">Datenschutz </a> 
-    <a href="https://www.google.com" class="navlink"> Hilfe</a>
+    <a href="{% url 'home:Impressum'%}" class="navlink"> Impressum </a>
+    <a href="{% url 'home:Datenschutz'%}" class="navlink">Datenschutz </a> 
+    <a href="{% url 'home:Support'%}" class="navlink"> Hilfe</a>
 </div>
         
     
